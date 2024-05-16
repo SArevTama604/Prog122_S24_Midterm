@@ -1,0 +1,183 @@
+﻿<Window
+    x:Class="Prog122_S24_Midterm.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Prog122_S24_Midterm"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Canvas>
+        <!-- Labels -->
+        <Label
+            Content="Coffee"
+            Canvas.Left="20"
+            Canvas.Top="20"
+            Height="40"
+            Width="80" />
+        <Label
+            Content="Tea"
+            Canvas.Left="32"
+            Canvas.Top="148" />
+        <Label
+            Content="Breakfast"
+            Canvas.Left="32"
+            Canvas.Top="301"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Label
+            Content="Customer Name:"
+            Canvas.Left="425"
+            Canvas.Top="-4"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Buttons -->
+        <Button
+            x:Name="btnDarkCoffee"
+            Content="Dark"
+            Canvas.Left="20"
+            Canvas.Top="60"
+            Width="102"
+            Click="btnDarkCoffee_Click"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Height="67" />
+        <Button
+            x:Name="btnMediumCoffee"
+            Content="Medium"
+            Canvas.Left="149"
+            Canvas.Top="60"
+            Width="102"
+            Click="btnMediumCoffee_Click"
+            Height="67"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnLightCoffee"
+            Content="Light "
+            Canvas.Left="280"
+            Canvas.Top="60"
+            Width="102"
+            Click="btnLightCoffee_Click"
+            Height="67"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnBlackTea"
+            Content="Black"
+            Canvas.Left="20"
+            Canvas.Top="193"
+            Width="102"
+            Click="btnBlackTea_Click"
+            Height="67"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnChaiTea"
+            Content="Chai"
+            Canvas.Left="149"
+            Canvas.Top="193"
+            Width="102"
+            Click="btnChaiTea_Click"
+            HorizontalAlignment="Center"
+            Height="67"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnGreenTea"
+            Content="Green"
+            Canvas.Left="280"
+            Canvas.Top="193"
+            Width="102"
+            Click="btnGreenTea_Click"
+            Height="67"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnFruit"
+            Content="Fruit"
+            Canvas.Left="149"
+            Canvas.Top="340"
+            Width="102"
+            Click="btnFruit_Click"
+            HorizontalAlignment="Center"
+            Height="67"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnPastry"
+            Content="Pastry"
+            Canvas.Left="280"
+            Canvas.Top="340"
+            Width="102"
+            Click="btnPastry_Click"
+            Height="67"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnSandwich"
+            Content="Sandwich"
+            Canvas.Left="20"
+            Canvas.Top="340"
+            Width="102"
+            Click="btnSandwich_Click"
+            Height="67"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <Button
+            x:Name="btnCompletePurchase"
+            Content="Complete Purchase"
+            Canvas.Left="425"
+            Canvas.Top="403"
+            Width="170"
+            Click="btnCompletePurchase_Click"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Text Boxes -->
+        <TextBox
+            x:Name="txtCustomerName"
+            Canvas.Left="425"
+            Canvas.Top="21"
+            Width="170"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+        <!-- Rich Text Boxes -->
+        <RichTextBox
+            x:Name="richTextBoxCurrentOrderDetails"
+            Canvas.Left="425"
+            Canvas.Top="44"
+            Width="170"
+            Height="354"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
+        <RichTextBox
+            x:Name="richTextBoxPreviousOrderDetails"
+            Canvas.Left="611"
+            Canvas.Top="30"
+            Width="179"
+            Height="393"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
+
+        <!-- Combo Box -->
+        <ComboBox
+            x:Name="comboBoxPreviousOrders"
+            Canvas.Left="611"
+            Canvas.Top="3"
+            Width="179"
+            SelectionChanged="comboBoxPreviousOrders_SelectionChanged"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+        <RichTextBox
+            x:Name="richTextBoxPreviousOrders"
+            Canvas.Left="425"
+            Canvas.Top="30"
+            Width="170"
+            Height="393"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
+    </Canvas>
+</Window>
